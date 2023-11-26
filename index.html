@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Le jeu de la vie</h1>
+    <h2>Tour 0</h2>
+    <button id="buttonTurn">tour suivant</button>
+    <button id="buttonAutomatic">Automatique</button>
+    <div>
+      <input
+        type="range"
+        id="vitesse"
+        name="vitesse"
+        oninput="changeCelerity(this.value)"
+        min="0.01"
+        max="100"
+      />
+      <label for="vitesse">Vitesse</label>
+    </div>
+    <div id="playGround">
+      <div id="bests">
+        <nav><h2>Figures principales</h2></nav>
+        <div id="bests__main"></div>
+      </div>
+      <canvas id="canvas" width="1000" height="1000"></canvas>
+      <div id="memory"></div>
+    </div>
+    <script src="death.js"></script>
+    <script src="birth.js"></script>
+    <script src="draw.js"></script>
+    <script src="main.js"></script>
+    <script src="figures.js"></script>
+  </body>
+</html>

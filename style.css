@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+}
+
+canvas {
+  border: 1px solid black;
+  width: 40%;
+}
+
+#playGround {
+  margin-top: 2%;
+  border: 1px solid red;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+#bests {
+  background-color: aquamarine;
+  width: 25%;
+}
+
+#bests nav {
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bests__main {
+  border: 1px solid blue;
+  height: 95%;
+  display: flex;
+  gap: 5%;
+}
+
+#memory {
+  background-color: burlywood;
+  width: 25%;
+}
+
+.figContainer {
+  width: 45%;
+  height: 45%;
+  background-color: brown;
+}
